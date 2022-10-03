@@ -7,11 +7,10 @@ import "./styles/index.scss";
 import { Navbar } from "widgets/Navbar";
 
 export const App = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
   return (
     <div className={classNames("app", {}, [theme])}>
       <Navbar />
-      <button onClick={toggleTheme}>Switch</button>
     </div>
   );
 };
